@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: boc_raw
+      description: This is the FIS data source for acbs
+      database: boc
+      schema: raw
+      tables:
+          - name: acbs_dim_customer
+            description: One record per customer.
+          - name: ibs_dim_customer
+            description: One record per customer.
