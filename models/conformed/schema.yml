@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: int_dim_customer
+    description: Intermediate table before loading into Customer Dimension
+    columns:
+      - name: c_custkey
+        description: Customer Natural Key
+        tests:
+          - unique
+          - not_null
+      - name: c_name
+        description: Customer Name
+        tests:
+          - not_null
+      - name: c_address
+        description: Customer Address
+        tests:
+          - not_null
+      - name: c_nationkey
+        description: Nation foreign key on the National table
+        tests:
+          - not_null
+      - name: c_phone
+        description: Customer Phone Number
+        tests:
+          - not_null
+      - name: c_acctbal
+        description: Customer Account Balance
+        tests:
+          - not_null
+      - name: c_mktsegment
+        description: Market Segment as defined by the Marketing Analytics team
+        tests:
+          - not_null
+      - name: c_comment
+        description: Comments that can be entered by front end data entry
+        tests:
+          - not_null
+    
