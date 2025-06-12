@@ -3,6 +3,8 @@ version: 2
 models:
   - name: int_dim_customer
     description: Intermediate table before loading into Customer Dimension
+    config:
+      tags: ['orchestrate']
     columns:
       - name: c_custkey
         description: Customer Natural Key
